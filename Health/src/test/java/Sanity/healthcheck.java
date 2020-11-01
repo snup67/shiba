@@ -79,7 +79,7 @@ public class healthcheck {
             // Create log for Chrome Actions
             System.setProperty("webdriver.chrome.logfile", ".\\test-output\\chromedriver.txt");
             ChromeOptions options = new ChromeOptions();
-            //options.addArguments("--headless");
+            options.addArguments("--headless");
             driver = new ChromeDriver(options);
 
 
