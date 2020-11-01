@@ -23,7 +23,7 @@ pipeline {
         
         stage('Load Application') {
             steps { 
-                bat 'docker run --name heltah -p 9000:80 -d health%VERSION%'
+                bat 'docker run --name health -p 9000:80 -d health%VERSION%'
             }
         }
 		
