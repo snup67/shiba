@@ -1,0 +1,62 @@
+pipeline {
+    
+    agent any
+    
+    options {
+                timestamps ()  
+            }
+            
+    
+    parameters {
+        
+               choice(name: 'VERSION', choices: [':1', ':2'], description: 'Choose Application Version')
+                
+                }
+            
+    stages {
+	
+		stage('Checkout Code'){
+                steps{
+                    git 'https://github.com/snup67/shiba.git'
+                }
+			}
+        
+        stage('Load Application') {
+            steps { 
+                bat 'docker run --name heltah -p 9000:80 -d health%VERSION%'
+            }
+        }
+		
+		
+		stage('Check Application') {
+            steps { 
+                bat 'C:\\Tools\\apache-maven\\bin\\mvn clean install'
+            }
+        }
+    }
+	
+	
+	post {
+		always {
+			publishHTML([allowMissing: false, 
+						 alwaysLinkToLastBuild: false, 
+						 keepAll: false, 
+						 reportDir: 'test-output', 
+						 reportFiles: 'extentReport.html', 
+						 reportName: 'Sanity-Report', 
+						 reportTitles: ''])
+                
+                
+            publishHTML([allowMissing: false, 
+						 alwaysLinkToLastBuild: false, 
+						 keepAll: false, 
+						 reportDir: 'test-output/html', 
+						 reportFiles: 'index.html', 
+						 reportName: 'Report', 
+						 reportTitles: ''])
+						 
+			step([$class: 'Publisher', reportFilenamePattern: '**/test-output/xml/Sanity.healthcheck_results.xml'])
+			
+		        }
+         }      
+}
