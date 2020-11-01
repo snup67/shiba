@@ -1,0 +1,48 @@
+pipeline {
+    
+    agent any
+    
+    options {
+                timestamps ()  
+            }
+            
+    
+    
+            
+    stages {
+	
+		stage('Checkout Code'){
+                steps{
+                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/snup67/shiba.git'
+                }
+			}
+        
+        
+		
+		
+		stage('Check Application') {
+            steps { 
+                
+                dir('health') {
+                bat 'C:\\Tools\\apache-maven\\bin\\mvn clean install'
+                }
+                
+            }
+        }
+    }
+	
+	
+	post {
+		always {
+		    
+			publishHTML([allowMissing: false, 
+						 alwaysLinkToLastBuild: false, 
+						 keepAll: false,
+						 reportDir: 'Health/test-output', 
+						 reportFiles: 'extentReport.html', 
+						 reportName: 'Sanity-Report', 
+						 reportTitles: ''])
+                }
+			
+    }      
+}
