@@ -13,6 +13,10 @@ pipeline {
 	
 		stage('Checkout Code'){
                 steps{
+					//Delete all files in worksoace
+					cleanWs()
+					
+					//checkout from github
                     git branch: 'main', credentialsId: 'github', url: 'https://github.com/snup67/shiba.git'
                 }
 			}
@@ -42,6 +46,7 @@ pipeline {
 						 reportFiles: 'extentReport.html', 
 						 reportName: 'Sanity-Report', 
 						 reportTitles: ''])
+					
                 }
 			
     }      
