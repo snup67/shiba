@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="782bc129-8914-4191-8ad4-869b899d5d20" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jgF9WDOWflUjtQIHEtJecqC1bA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RunManager" selected="TestNG.C:/IntelijWorkspace/heltah/testng.xml">
+    <configuration name="C:/IntelijWorkspace/heltah/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="heltah" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="healthcheck" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="heltah" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sanity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sanity" />
+      <option name="MAIN_CLASS_NAME" value="Sanity.healthcheck" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/IntelijWorkspace/heltah/testng.xml" />
+        <item itemvalue="TestNG.healthcheck" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="782bc129-8914-4191-8ad4-869b899d5d20" name="Default Changelist" comment="" />
+      <created>1604217676639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604217676639</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1460" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604218674012">
+      <screen x="1366" y="0" width="1280" height="984" />
+    </state>
+    <state x="1460" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1280.984@1366.0.1280.984" timestamp="1604218674012" />
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1604231645497">
+      <screen x="1366" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1280.984@1366.0.1280.984" timestamp="1604231645497" />
+    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1604231645497">
+      <screen x="1366" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1280.984@1366.0.1280.984" timestamp="1604231645497" />
+    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1604231645497">
+      <screen x="1366" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1280.984@1366.0.1280.984" timestamp="1604231645497" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1604231645497">
+      <screen x="1366" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="263" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1280.984@1366.0.1280.984" timestamp="1604231645497" />
+    <state x="1507" y="135" key="SettingsEditor" timestamp="1604218557860">
+      <screen x="1366" y="0" width="1280" height="984" />
+    </state>
+    <state x="1507" y="135" key="SettingsEditor/0.0.1366.728/1366.0.1280.984@1366.0.1280.984" timestamp="1604218557860" />
+  </component>
+</project>

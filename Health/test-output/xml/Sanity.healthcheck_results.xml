@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ChromeTest"
+           tests="9"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="13.253">
+  <properties />
+  
+  
+            <testcase name="Test03_Home" time="0.106" classname="Sanity.healthcheck" />
+                <testcase name="Test01_openPage" time="2.600" classname="Sanity.healthcheck" />
+                <testcase name="Test06_News" time="0.034" classname="Sanity.healthcheck" />
+                <testcase name="Test04_AboutUs" time="0.044" classname="Sanity.healthcheck" />
+                <testcase name="Test07_Contact" time="0.031" classname="Sanity.healthcheck" />
+                <testcase name="Test08_CheckNews" time="2.879" classname="Sanity.healthcheck" />
+                <testcase name="Test09_appointment" time="6.266" classname="Sanity.healthcheck" />
+                <testcase name="Test02_WebsiteLink" time="1.245" classname="Sanity.healthcheck" />
+                <testcase name="Test05_Doctors" time="0.048" classname="Sanity.healthcheck" />
+      
+</testsuite>
