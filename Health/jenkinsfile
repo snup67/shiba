@@ -17,7 +17,7 @@ pipeline {
 	
 		stage('Checkout Code'){
                 steps{
-                    git 'https://github.com/snup67/shiba.git'
+                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/snup67/shiba.git'
                 }
 			}
         
@@ -30,7 +30,11 @@ pipeline {
 		
 		stage('Check Application') {
             steps { 
+                
+                dir('health') {
                 bat 'C:\\Tools\\apache-maven\\bin\\mvn clean install'
+                }
+                
             }
         }
     }
@@ -38,25 +42,15 @@ pipeline {
 	
 	post {
 		always {
+		    
 			publishHTML([allowMissing: false, 
 						 alwaysLinkToLastBuild: false, 
-						 keepAll: false, 
-						 reportDir: 'test-output', 
+						 keepAll: false,
+						 reportDir: 'Health/test-output', 
 						 reportFiles: 'extentReport.html', 
 						 reportName: 'Sanity-Report', 
 						 reportTitles: ''])
-                
-                
-            publishHTML([allowMissing: false, 
-						 alwaysLinkToLastBuild: false, 
-						 keepAll: false, 
-						 reportDir: 'test-output/html', 
-						 reportFiles: 'index.html', 
-						 reportName: 'Report', 
-						 reportTitles: ''])
-						 
-			step([$class: 'Publisher', reportFilenamePattern: '**/test-output/xml/Sanity.healthcheck_results.xml'])
+                }
 			
-		        }
-         }      
+    }      
 }
