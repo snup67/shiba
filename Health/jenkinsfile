@@ -21,7 +21,7 @@ pipeline {
                 }
 			}
         
-        stage('Load Application') {
+        stage('Deploy Application') {
             steps { 
                 bat 'docker run --name health -p 9000:80 -d health%VERSION%'
             }
